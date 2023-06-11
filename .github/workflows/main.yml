@@ -1,4 +1,4 @@
-name: template-action
+name: run-deploy-front-end
 
 on:
   push:
@@ -6,20 +6,9 @@ on:
 
 jobs:
   build:
-    name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run a multi line script
-        run: |
-          echo Testandooo
-          echo Testando 2
-
-  name: Greeting 2
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - name: Run a multi line script
-          run: |
-            echo 2
-            echo 22
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Install all dependencies
+        run: npm install

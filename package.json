@@ -1,0 +1,23 @@
+{
+  "name": "basic-ci-cd-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andre831/basic-ci-cd-actions.git"
+  },
+  "author": "Andre Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andre831/basic-ci-cd-actions/issues"
+  },
+  "homepage": "https://github.com/andre831/basic-ci-cd-actions#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
