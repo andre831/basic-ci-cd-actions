@@ -7,8 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: docker://andre831/ci-cd-training:express-training
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-      - name: Install all dependencies
-        run: npm install
