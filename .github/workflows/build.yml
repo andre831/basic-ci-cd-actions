@@ -20,7 +20,7 @@ jobs:
       - name: Check
         uses: actions/checkout@master
 
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@v0
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@main
         with:
           service_account_email: ${{ secrets.GCP_EMAIL }}
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
