@@ -4,7 +4,17 @@ on:
     branches: [main]
 
 jobs:
+  build-container:
+    name: Build Container
+    runs-on: ubuntu-latest
+    container:
+      image: docker://andre831/ci-cd-training:express-training
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+
   deploy-gcp:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Check
