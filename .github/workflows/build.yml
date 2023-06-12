@@ -1,18 +1,9 @@
-name: run-deploy-front-end
-
+name: run-build-deploy
 on:
   push:
     branches: [main]
 
 jobs:
-  build-container:
-    runs-on: ubuntu-latest
-    container:
-      image: docker://andre831/ci-cd-training:express-training
-    steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-
   deploy-gcp:
     runs-on: ubuntu-latest
     steps:
