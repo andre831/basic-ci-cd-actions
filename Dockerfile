@@ -8,6 +8,6 @@ RUN npm install -g express
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD [ "node", "./main.js" ]
